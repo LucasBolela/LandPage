@@ -61,9 +61,9 @@
 	var clickMenu = function() {
 
 		$('#navbar a:not([class="external"])').click(function(event){
-			var section = $(this).data('nav-section'),
-				navbar = $('#navbar');
-
+			var section = $(this).data('nav-section');
+			// let	navbar = $('#navbar'); //Variavel conflitando com o atalho para o chat na NavBar
+				// console.log(navbar)
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
 			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
